@@ -6,74 +6,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <img src="avatar.jpg" width="200" alt="My Photo">
-    <h1>George Ukolov</h1>
-    <p><em>QA engeneer in <strong>TT</strong></em></p>
-    <p>Love fishing, cycling, programming</p>
+    <div class="header">
+        <h1>George Ukolov</h1>
+        <p><em>QA engineer</em></p>
+    </div>
+    <div class="container">
+        <div class="work-education">
+            <div class="work-info">
+                <h2>Work History</h2>
+                <div class="work-el">
+                    <div class="work-period">
+                        2022-02 - present
+                    </div>
+                    <div class="work">
+                        <b>Junior QA engineer</b>
+                        <p class="work-place">TopTrader - Financial and social marketplace</p>
+                        <ul class="work-duties">
+                            <li>Функциональное тестирование(Selenium, Python)</li>
+                            <li>Тестирование API(Jest, Postman, Python)</li>
+                            <li>Ручное тестирование</li>
+                            <li>Ведение тестовой документации</li>
+                            <li>Написание сценариев тестирования</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work-el">
+                    <div class="work-period">
+                        2021-07 - 2022-02
+                    </div>
+                    <div class="work">
+                        <b>Junior QA engineer</b>
+                        <p class="work-place">Zelax - telecommunications equipment manufacturer</p>
+                        <ul class="work-duties">
+                            <li>Автоматизация тестирования UI web приложения(Selenium, Python)</li>
+                            <li>Написание сценариев тестирования</li>
+                            <li>Ведение тестовой документации</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="education">
+                <h2>Education</h2>
+                <div class="education-el">
+                    <div class="education-period">
+                        2017-09 - 2021-06
+                    </div>
+                    <div class="university">
+                        <p><b>Bachelor of Infocommunication technologies and communication systems</b></p>
+                        <p>National Research University of Electronic Technology (MIET)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <hr>
+        <div class="personal__info ">
+            <div class="personal__info__item contacts">
+                <h2>Personal Information</h2>
+                <div class="contacts__item">
+                    <b>Email</b>
+                    <p><a href="mailto:ukolovgeorge1999@gmail.com">ukolovgeorge1999@gmail.com</a></p>
+                </div>
+                <div class="contacts__item">
+                    <b>Phone</b>
+                    <p>89969776552</p>
+                </div>
+                <div class="contacts__item">
+                    <b>Social networks</b>
+                    <p><a href="https://vk.com/lostvillain" target="_blank">VK</a>
+                        <a href="https://t.me/ChamplooSamurais" target="_blank">Telegram</a>
+                    </p>
+                </div>
+            </div>
+            <div class="personal__info__item skills">
+                <h2>Skills</h2>
+                <p><b>Languages: </b>Python, JavaScript, HTML5/CSS</p>
+                <p><b>Tools: </b>Pytest, Selenium, Postman, Git, Jira</p>
+            </div>
+            <div class="personal__info__item">
+                <h2 class="languages">Languages</h2>
+                <ul>
+                    <li>English
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </li>
+                    <li>German
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </li>
+                    <li>French
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </li>
 
-    <h2>My social networks:</h2>
-    <ul type="disc">
-        <li><a href="https://vk.com/lostvillain" target="_blank">VK</a></li>
-        <li><a href="https://t.me/ChamplooSamurais" target="_blank">Telegram</a></li>
-    </ul>
+                </ul>
+            </div>
+            <div class="hobby personal__info__item"></div>
 
+        </div>
+    </div>
 
-    <h2>hobbies:</h2>
-    <ol>
-        <li>Snowboarding</li>
-        <li>Cycling</li>
-        <li>Travelling</li>
-    </ol>
-
-    <hr>
-    <h2>Связаться со мной</h2>
-
-    <form action="/">
-        <label for="name">Your name</label>
-        <input type="text" id="name" placeholder="Put your name">
-
-        <br>
-
-        <label for="email">Your email</label>
-        <input type="text" id="email" placeholder="Put your email">
-
-        <br>
-
-        <label for="text">Write your message</label>
-        <br>
-        <textarea id="text="></textarea>
-
-        <br>
-
-        <input type="submit" value="Связаться">
-    </form>
-
-    <h2>Work Experince:</h2>
-    <table>
-        <tr>
-            <th>Компания</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-        <tr>
-            <td>Zelax</td>
-            <td>Junior QA engeneer</td>
-            <td>2021-2022</td>
-        </tr>
-        <tr>
-            <td>TopTrader</td>
-            <td>Junior QA engeneer</td>
-            <td>2022 - till now</td>
-        </tr>
-    </table>
-
-    <h2>New page:</h2>
-    <a href="dubritino.html">Watch</a>
+    </div>
 </body>
 
 </html>
